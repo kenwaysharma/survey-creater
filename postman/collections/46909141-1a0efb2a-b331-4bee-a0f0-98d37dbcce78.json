@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "46909141-1a0efb2a-b331-4bee-a0f0-98d37dbcce78",
+		"name": "SURVEY-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Survey",
+			"id": "46909141-355c6b43-ac14-4e5d-8f8d-6b0d5d38cadf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"Intiiali Survery\",\n    \"fields\":[\"address\", \"name\", \"phoneNumber\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/create-survery-form",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create-survery-form"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Survey",
+			"id": "46909141-c9ba58c1-52af-4634-a96c-6fd126e9ed59",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/get-survey",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"get-survey"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fill Survey",
+			"id": "46909141-56dd575e-0bff-4f59-949c-eb2e213222d4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"kenwaysharma2@gmail.com\",\n    \"fields\": [\n        {\"address\": \"New Delhi 2\"},\n        {\"name\": \"Varun\"},\n        {\"phoneNumber\":\"8802683829\"}\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/fill-survey/68957a44ea0677e222144168",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"fill-survey",
+						"68957a44ea0677e222144168"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Entries for All Surveys",
+			"id": "46909141-4f83482b-5b2a-4310-9680-0a206387532b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/temp-get-survey-entries",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"temp-get-survey-entries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Entries for a Survey",
+			"id": "46909141-53b8d0f4-b561-4fcf-8025-7c751a779337",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/temp-get-survey-entries",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"temp-get-survey-entries"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
