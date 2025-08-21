@@ -16,7 +16,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"title\":\"Intiiali Survery\",\n    \"fields\":[\"address\", \"name\", \"phoneNumber\"]\n}",
+					"raw": "{\n    \"title\":\"Survey 2\",\n    \"fields\":[\"address\", \"name\", \"phoneNumber\"]\n   \n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -69,7 +69,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\":\"kenwaysharma2@gmail.com\",\n    \"fields\": [\n        {\"address\": \"New Delhi 2\"},\n        {\"name\": \"Varun\"},\n        {\"phoneNumber\":\"8802683829\"}\n    ]\n}",
+					"raw": "{\n    \"email\":\"kenwaysharma23@gmail.com\",\n    \"fields\": [\n        {\"address\": \"New Delhi , vasant kunj\"},\n        {\"name\": \"Varun sharma\"},\n        {\"phoneNumber\":\"8802683829\"}\n    ]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -77,14 +77,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/fill-survey/68957a44ea0677e222144168",
+					"raw": "localhost:3000/fill-survey/689583b9254ab2f2841a4d3a",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"fill-survey",
-						"68957a44ea0677e222144168"
+						"689583b9254ab2f2841a4d3a"
 					]
 				}
 			},
@@ -122,13 +122,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/temp-get-survey-entries",
+					"raw": "localhost:3000/get-survey-entries/689583b9254ab2f2841a4d3a",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"temp-get-survey-entries"
+						"get-survey-entries",
+						"689583b9254ab2f2841a4d3a"
 					]
 				}
 			},
